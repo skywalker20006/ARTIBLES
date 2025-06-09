@@ -85,7 +85,7 @@ class CollectiblesPage extends StatelessWidget {
                           children: [
                             FilledButton(
                               onPressed: () {
-                                // You can later add buy logic here
+                                //logic shii sme 1
                               },
                               child: Text('Buy'),
                             ),
