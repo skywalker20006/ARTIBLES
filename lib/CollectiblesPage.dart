@@ -16,24 +16,19 @@ class CollectibleItem {
 class CollectiblesPage extends StatelessWidget {
   final List<CollectibleItem> collectibles = [
     CollectibleItem(
-      title: 'Signed Jersey',
-      description: 'Authentic match-worn jersey signed by a football legend.',
-      imagePath: 'assets/jersey.jpg',
+      title: 'Fake Captain Americ',
+      description: 'The captain america you all hate but love in thunderbolts',
+      imagePath: 'assets/pic4.webp',
     ),
     CollectibleItem(
-      title: 'Rare Coin',
-      description: 'Ancient currency with a rich backstory and timeless value.',
-      imagePath: 'assets/coin.jpg',
+      title: 'White Cyborg',
+      description: 'White version of a T-rex',
+      imagePath: 'assets/pic5.webp',
     ),
     CollectibleItem(
-      title: 'Autographed Guitar',
-      description: 'Signed by a rock icon, this guitar’s got history in every string.',
-      imagePath: 'assets/guitar.jpg',
-    ),
-    CollectibleItem(
-      title: 'Limited Edition Poster',
-      description: 'Numbered collector’s item, exclusive print run. Hang it with pride.',
-      imagePath: 'assets/poster.jpg',
+      title: 'Geeked Avatar',
+      description: 'That one blue avatar you see in that movie',
+      imagePath: 'assets/pic6.webp',
     ),
   ];
 

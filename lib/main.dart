@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
     final themeProvider = Provider.of<ThemeProvider>(context);
 
     return MaterialApp(
-      title: 'ArtVault',
+      title: 'ARTIBLES',
       themeMode: themeProvider.themeMode,
       theme: ThemeData(
         brightness: Brightness.light,
@@ -34,12 +34,12 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         colorSchemeSeed: Colors.deepPurple,
       ),
-      home: LoginPage(), // Entry point to Login/Register
+      home: LoginPage(), // start
     );
   }
 }
 
-// Welcome Screen with Login & Register buttons
+// login (just goes directly to the homepage)
 class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -50,6 +50,12 @@ class LoginPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              // 🔥 Sexy logo
+              Image.asset(
+                'assets/applogo.png', 
+                height: 350,
+              ),
+              SizedBox(height: 40),
               FilledButton(
                 onPressed: () {
                   Navigator.push(
@@ -77,7 +83,7 @@ class LoginPage extends StatelessWidget {
   }
 }
 
-// Register Screen with simple validation
+// Validation for register page
 class RegisterPage extends StatefulWidget {
   @override
   State<RegisterPage> createState() => _RegisterPageState();
@@ -126,7 +132,9 @@ class _RegisterPageState extends State<RegisterPage> {
                 decoration: InputDecoration(labelText: 'Password'),
                 obscureText: true,
                 validator: (value) =>
-                    value == null || value.length < 6 ? 'Min 6 characters' : null,
+                    value == null || value.length < 6
+                        ? 'Min 6 characters'
+                        : null,
               ),
               SizedBox(height: 24),
               FilledButton(
@@ -148,7 +156,7 @@ class _RegisterPageState extends State<RegisterPage> {
   }
 }
 
-// Main App with Bottom Navigation
+// Bottom Navigation
 class MainApp extends StatefulWidget {
   @override
   State<MainApp> createState() => _MainAppState();
