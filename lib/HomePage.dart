@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'ArtsPage.dart'; 
+import 'arts_page.dart'; 
 
 class ArtPiece {
   final String title;

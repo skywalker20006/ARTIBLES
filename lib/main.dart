@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'theme_provider.dart';
+import 'themeswitch.dart';
 
-import 'package:madapp/ArtsPage.dart';
-import 'package:madapp/CartPage.dart';
-import 'package:madapp/CollectiblesPage.dart';
-import 'package:madapp/HomePage.dart';
+import 'package:madapp/arts_page.dart';
+import 'package:madapp/cart_page.dart';
+import 'package:madapp/collectibles_page.dart';
+import 'package:madapp/homepage.dart';
 
 void main() {
   runApp(
@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       title: 'ARTIBLES',
+      debugShowCheckedModeBanner: false,
       themeMode: themeProvider.themeMode,
       theme: ThemeData(
         brightness: Brightness.light,
@@ -50,7 +51,7 @@ class LoginPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // 🔥 Sexy logo
+              // logo 
               Image.asset(
                 'assets/applogo.png', 
                 height: 350,
@@ -156,7 +157,7 @@ class _RegisterPageState extends State<RegisterPage> {
   }
 }
 
-// Bottom Navigation
+// MUI3 Navbar
 class MainApp extends StatefulWidget {
   @override
   State<MainApp> createState() => _MainAppState();

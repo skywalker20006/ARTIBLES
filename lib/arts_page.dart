@@ -55,7 +55,7 @@ class ArtsPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Image for each art piece
+                  // images for the art pieces
                   Image.asset(
                     art.imagePath,
                     height: 180,
@@ -63,7 +63,6 @@ class ArtsPage extends StatelessWidget {
                     fit: BoxFit.cover,
                   ),
 
-                  // Content
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Column(
@@ -81,7 +80,7 @@ class ArtsPage extends StatelessWidget {
                         SizedBox(height: 16),
                         FilledButton(
                           onPressed: () {
-                            // you can add a buy function here later
+                 
                           },
                           child: Text('Buy'),
                         ),

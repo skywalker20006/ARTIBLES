@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'CartPage.dart';
-import 'SettingsPage.dart';
+import 'cart_page.dart';
+import 'settings.dart';
 import 'main.dart';
 
 class MyProfilePage extends StatelessWidget {
@@ -12,7 +12,7 @@ class MyProfilePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('My Profile'),
-        centerTitle: true,
+        centerTitle: true,      
         backgroundColor: colorScheme.primary,
         foregroundColor: colorScheme.onPrimary,
         elevation: 0,

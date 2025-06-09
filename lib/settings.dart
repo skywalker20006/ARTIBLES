@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'theme_provider.dart'; // we’ll create this too
+import 'themeswitch.dart';
 
 class SettingsPage extends StatelessWidget {
   @override

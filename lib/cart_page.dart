@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'MyProfilePage.dart';
+import 'profilepage.dart';
 
 class CartPage extends StatelessWidget {
   @override
@@ -49,22 +49,22 @@ class CartPage extends StatelessWidget {
               children: [
                 Card(
                   child: ListTile(
-                    title: Text('Starry Night - Rs.150,000'),
+                    title: Text('Bingo the User - Rs.15,000'),
                     trailing: IconButton(
                       icon: Icon(Icons.close),
                       onPressed: () {
-                        // No logic, just for show 💀
+        
                       },
                     ),
                   ),
                 ),
                 Card(
                   child: ListTile(
-                    title: Text('Rare Coin - Rs.25,000'),
+                    title: Text('Midnight Alley - Rs.25,000'),
                     trailing: IconButton(
                       icon: Icon(Icons.close),
                       onPressed: () {
-                        // Just aesthetic, mate
+             
                       },
                     ),
                   ),
@@ -73,12 +73,20 @@ class CartPage extends StatelessWidget {
             ),
           ),
 
-          // Checkout button
+          // checkout including snackbar
           Padding(
             padding: const EdgeInsets.all(16),
             child: FilledButton.icon(
               onPressed: () {
-                // Checkout logic goes here
+                // Show snackbar
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text('Checkout complete! | CPEX Couriers will deliver soon'),
+                    backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+                    behavior: SnackBarBehavior.floating,
+                    duration: Duration(seconds: 3),
+                  ),
+                );
               },
               icon: Icon(Icons.shopping_cart_checkout),
               label: Text('Checkout'),

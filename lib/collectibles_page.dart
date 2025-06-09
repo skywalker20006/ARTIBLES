@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:madapp/ItemDetailPage.dart';
+import 'package:madapp/item_detail_page.dart';
 
 class CollectibleItem {
   final String title;
@@ -51,7 +51,7 @@ class CollectiblesPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Image section
+         
                   Image.asset(
                     item.imagePath,
                     height: 180,
@@ -59,7 +59,7 @@ class CollectiblesPage extends StatelessWidget {
                     fit: BoxFit.cover,
                   ),
 
-                  // Content section
+        
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Column(
