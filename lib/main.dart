@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'themeswitch.dart';
 
@@ -26,11 +27,13 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       themeMode: themeProvider.themeMode,
       theme: ThemeData(
+        fontFamily: GoogleFonts.inter().fontFamily,
         brightness: Brightness.light,
         useMaterial3: true,
         colorSchemeSeed: Colors.deepPurple,
       ),
       darkTheme: ThemeData(
+        fontFamily: GoogleFonts.inter().fontFamily,
         brightness: Brightness.dark,
         useMaterial3: true,
         colorSchemeSeed: Colors.deepPurple,
