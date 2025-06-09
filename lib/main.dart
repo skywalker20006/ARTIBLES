@@ -5,7 +5,7 @@ import 'themeswitch.dart';
 import 'package:madapp/arts_page.dart';
 import 'package:madapp/cart_page.dart';
 import 'package:madapp/collectibles_page.dart';
-import 'package:madapp/homepage.dart';
+import 'package:madapp/home_page.dart';
 
 void main() {
   runApp(
